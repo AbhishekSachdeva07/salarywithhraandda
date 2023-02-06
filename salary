@@ -1,0 +1,22 @@
+//wap to enter basic salary and calculate gross salary of an employee according to given condition
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    int a;
+    printf("Enter your salary\n");
+    scanf("%d",&a);
+    if (a<=10000){
+        printf("HRA=20%% i.e %f and DA=80%% i.e %f",a*0.2,a*0.8);
+    }
+    else if (a<=10001 && a>=20000){
+        printf("HRA=25%% i.e %f and DA=90%% i.e %f",a*0.25,a*0.9);
+    }
+    else if (a>=20000){
+        printf("HRA=30%% i.e %f and DA=95%% i.e %f",a*0.3,a*0.95);
+    }
+    
+    
+    return 0;
+
+}
